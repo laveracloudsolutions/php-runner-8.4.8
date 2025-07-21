@@ -1,6 +1,8 @@
-# Php RUNNER 8.4.8
+# Php Runner 8.4.8
 
-PHP Runner (php, Apache, etc) | Docker Images utilisé pour exécuter des application PHP
+PHP Runner (php, Apache, OpenTelemetry, etc)
+
+> Docker Image utilisé pour exécuter des applications de type PHP
 
 ## Préparation (Manuelle)
 
