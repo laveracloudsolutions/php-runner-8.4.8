@@ -3,6 +3,7 @@ FROM ghcr.io/laveracloudsolutions/php:8.4.8-apache-bookworm
 
 # Installation des dépendances
 RUN apt-get update -qq && \
+    apt-get upgrade -y && \
     apt-get install -qy \
     apache2=2.4.* \
     ca-certificates=* \
