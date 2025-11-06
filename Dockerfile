@@ -51,6 +51,10 @@ RUN docker-php-ext-configure zip && \
     docker-php-ext-configure gd --with-freetype --with-jpeg && \
     docker-php-ext-install -j"$(nproc)" intl pgsql pdo pdo_pgsql opcache zip gd
 
+# PHP Extensions (redis)
+RUN pecl install redis && \
+    docker-php-ext-enable redis
+
 # PHP Extensions (Opentelemetry)
 RUN pecl install opentelemetry protobuf
 RUN docker-php-ext-enable opentelemetry protobuf
